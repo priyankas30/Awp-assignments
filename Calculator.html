@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clear{
+            width: 175px;
+            border: 2px solid rgb(187, 184, 184) ;
+        }
+
+        .formstyle{
+            width: 200px;
+            height: 315px;
+            margin: auto;
+            border: 2px solid gray;
+            background-color: rgb(201, 186, 186);
+
+            margin-top: 32px;
+            
+
+         }
+        
+
+         input{
+             width:45px;
+             margin-left: 15px;
+             
+          
+         }
+
+         #answerstyle{
+             width: 175px;
+             
+
+         }
+
+    </style>
+</head>
+<body>
+    
+    <div class="formstyle" style="font-weight: bold;">&nbsp &nbsp &nbspMathematical calculator
+        <br> <br>
+
+        <form name="forms">
+            <input type="text" name ="answer" id="answerstyle"> <br> <br>
+
+            <input type="button" value=" 1 " onclick="forms.answer.value += '1' ">
+            <input type="button" value=" 2 " onclick="forms.answer.value += '2' ">
+            <input type="button" value=" 3 " onclick="forms.answer.value += '3' ">
+
+            <br> <br>
+             <!-----value+='1'----->
+             <!---value=value+ '1'--   '1' is not one ..it is any string character..
+                 so that whatever double digit value you want put on screen
+                  so it will concatinate that value with another value>
+                not adding 1 to that value..IT IS FOR THE CONCATINATION PURPOSE-->
+
+                <input type="button" value=" 4 " onclick="forms.answer.value += '4' ">
+                <input type="button" value=" 5 " onclick="forms.answer.value += '5' ">
+                <input type="button" value=" 6 " onclick="forms.answer.value += '6' ">
+
+                <br> <br>
+
+                <input type="button" value=" 7 " onclick="forms.answer.value += '7' ">
+                <input type="button" value=" 8 " onclick="forms.answer.value += '8' ">
+                <input type="button" value=" 9 " onclick="forms.answer.value += '9' ">
+
+                <br> <br>
+
+                <input type="button" value=" + " onclick="forms.answer.value += '+' ">
+                <input type="button" value=" - " onclick="forms.answer.value += '-' ">
+                <input type="button" value=" * " onclick="forms.answer.value += '*' ">
+
+                <br> <br>
+
+                <input type="button" value=" / " onclick="forms.answer.value += '/' ">
+                <input type="button" value=" 0 " onclick="forms.answer.value += '0' ">
+                <input type="button" value=" = " onclick="forms.answer.value =eval(forms.answer.value) ">
+                <!---evalt(orms.answer.value) is function used for not showing equal (=)to sign---->
+                <br><br>
+
+                <input id="clear" type="button" value="Clear All" onclick="forms.answer.value = ' ' ">
+
+
+
+        </form>
+
+
+
+    </div>
+    
+</body>
+</html>
