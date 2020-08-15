@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="grocerry.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+
+  <div class="row bg-primary align-items-center  justify-content-end" style="height:40px;">
+    <div class="col-2 text-light">Super Market</div>
+   
+          <div class="col-2 text-light justify-content-end"> Grocerry Items</div>
+          <div class="col-2 text-light"> Payment </div>
+ 
+        </div>
+
+     <!------Row 2-->
+     <div class="row justify-content-center  mt-2" style="height: 190px;">
+        <div class="col-6  rounded d-flex align-items-center
+          bg-info  flex-column"><br><br>New Grocery Item
+         <br>
+          <input id="inputid"  type="text" placeholder="">
+          <br>
+
+          <button onclick="comment()">Submit Here</button>
+        </div>
+      </div>
+       
+       <!----------Row 3----------->
+       <div style="text-align: center;";">Grocerry Items
+        <div class="row justify-content-center mt-1" style="height:150px"  >
+        <div class="col-6  rounded  d-flex align-items-center flex-column"
+        style="background:orange; overflow: block;" id="commentBox">
+        </div>
+       
+        </div>
+        <button  onclick="clear()">Clear all</button>
+      
+     
+      </div>
+  </div>
+</body>
+</html>
